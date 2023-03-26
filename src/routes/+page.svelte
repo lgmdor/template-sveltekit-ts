@@ -5,8 +5,8 @@
 
 <!--------style-------->
 <style lang="sass">
-	@use "$src/vars"
-	@use "$src/oc"
+	@use "$src/sass/vars"
+	@use "$src/sass/oc"
 
 
 </style>

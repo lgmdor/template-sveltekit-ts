@@ -5,6 +5,8 @@ specifiers:
   '@sveltejs/adapter-auto': ^1.0.0
   '@sveltejs/adapter-static': ^1.0.5
   '@sveltejs/kit': ^1.0.0
+  '@svelteuidev/composables': ^0.10.0
+  '@svelteuidev/core': ^0.10.0
   '@typescript-eslint/eslint-plugin': ^5.56.0
   '@typescript-eslint/parser': ^5.56.0
   dexie: ^3.2.3
@@ -30,6 +32,8 @@ devDependencies:
   '@sveltejs/adapter-auto': 1.0.0_@sveltejs+kit@1.0.13
   '@sveltejs/adapter-static': 1.0.5_@sveltejs+kit@1.0.13
   '@sveltejs/kit': 1.0.13_svelte@3.55.1+vite@4.0.4
+  '@svelteuidev/composables': 0.10.0
+  '@svelteuidev/core': 0.10.0_oi3kedtnefkf3b7n3qiyvyj76i
   '@typescript-eslint/eslint-plugin': 5.56.0_pl2pu3n62mdbsuzntjgfv3rdmq
   '@typescript-eslint/parser': 5.56.0_kvhumnresjtcflasshbz76q27a
   eslint: 8.31.0
@@ -274,6 +278,16 @@ packages:
       - supports-color
     dev: true
 
+  /@floating-ui/core/0.7.3:
+    resolution: {integrity: sha512-buc8BXHmG9l82+OQXOFU3Kr2XQx9ys01U/Q9HMIrZ300iLc8HLMgh7dcCqgYzAzf4BkoQvDcXf5Y+CuEZ5JBYg==}
+    dev: true
+
+  /@floating-ui/dom/0.5.2:
+    resolution: {integrity: sha512-z1DnEa7F3d8Fm/eXSbii8UEGpcjZGkQaYYUI0WpEVgD3vBfebDW8j/3ysusxonuMexoigA+A3b/fYH7sEqiwyg==}
+    dependencies:
+      '@floating-ui/core': 0.7.3
+    dev: true
+
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
     engines: {node: '>=10.10.0'}
@@ -338,6 +352,10 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
+  /@stitches/core/1.2.8:
+    resolution: {integrity: sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==}
+    dev: true
+
   /@sveltejs/adapter-auto/1.0.0_@sveltejs+kit@1.0.13:
     resolution: {integrity: sha512-yKyPvlLVua1bJ/42FrR3X041mFGdB4GzTZOAEoHUcNBRE5Mhx94+eqHpC3hNvAOiLEDcKfVO0ObyKSu7qldU+w==}
     peerDependencies:
@@ -400,6 +418,22 @@ packages:
       vitefu: 0.2.4_vite@4.0.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@svelteuidev/composables/0.10.0:
+    resolution: {integrity: sha512-6fmwFX9BSsF5jbEdrGqBloC0Knx5lyj7HjjZyD/hT6iKKeP/xDbNMfOLwIBqcBu4HN2EIWnLzvKBVeqoVKonWA==}
+    dev: true
+
+  /@svelteuidev/core/0.10.0_oi3kedtnefkf3b7n3qiyvyj76i:
+    resolution: {integrity: sha512-58cRAEZQmM48zZuYiMyMHwt6rfj0YtrzS71mfo+E2icjiYeofAANDYklCchMm1PClmcRT70OCZQc6SenoKuR9g==}
+    peerDependencies:
+      '@svelteuidev/composables': 0.10.0
+      svelte: '>=3.55.0'
+    dependencies:
+      '@floating-ui/dom': 0.5.2
+      '@stitches/core': 1.2.8
+      '@svelteuidev/composables': 0.10.0
+      svelte: 3.55.1
     dev: true
 
   /@trysound/sax/0.2.0:

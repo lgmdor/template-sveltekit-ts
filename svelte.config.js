@@ -11,9 +11,8 @@ const config = {
 		alias: {
 			$src: "./src/",
 			$lib: "./src/lib/",
-			$lgmui: "./src/lib/lgmui/",
 			$assets: "./src/assets/",
-			$icons: "./src/assets/icons/"
+			$misc: "./src/misc/"
 		},
 		files: {
 			assets: "./src/assets/"

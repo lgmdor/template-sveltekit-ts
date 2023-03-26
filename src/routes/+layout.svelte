@@ -7,8 +7,8 @@
 </svelte:head>
 
 <style lang="sass">
-  @use '$src/vars'
-  @use 'src/oc'
+  @use '$src/sass/vars'
+  @use 'src/sass/oc'
 
   :global(*)
     margin: 0
