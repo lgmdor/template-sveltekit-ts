@@ -1,0 +1,100 @@
+@use "oc"
+  
+//sizes
+$size-1: 1rem
+$size-2: $size-1 * 2
+$size-4: $size-1 * 4
+$size-8: $size-1 * 8
+$size-12: $size-1 * 12
+$size-16: $size-1 * 16
+$size-20: $size-1 * 20
+$size-24: $size-1 * 24
+$size-32: $size-1 * 32
+$size-48: $size-1 * 48
+$size-64: $size-1 * 64
+$size-128: $size-1 * 128
+
+//text colors
+$c-text-1: oc.$gray-5
+$c-text-2: oc.$gray-6
+$c-text-3: oc.$dark-3
+
+//other colors
+$c-main: oc.$indigo-8
+$c-white: oc.$gray-1
+
+//space
+$space-xxs: 4px
+$space-xs: 6px
+$space-s: 10px
+$space-m: 16px
+$space-l: 26px
+$space-xl: 42px
+
+//borders
+$border-dark: 1px solid oc.$dark-7
+$border-default: 1px solid oc.$dark-6
+$border-light: 1px solid oc.$dark-4
+
+//misc
+$ff: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+$ff-mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono",Menlo, Monaco, Consolas, monospace
+$br-m: 4px
+$br-l: 8px
+$bs: rgba(0, 0, 0, 0.18) 0px 2px 4px
+$lh: calc(1em + 1ex)
+
+//mixins
+@mixin center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin transition($type)
+  transition: $type 60ms linear
+
+@mixin bgHover($color, $lightness)
+  background-color: $color
+  &:hover
+    background-color: lighten($color, $lightness)
+
+//fonts
+@mixin font-defaults
+  line-height: $lh
+  font-family: $ff
+
+@mixin font-xs
+  font-size: 10px
+  letter-spacing: 0.6px
+  @include font-defaults
+  
+@mixin font-s 
+  font-size: 12px
+  letter-spacing: 0.4px
+  @include font-defaults
+  
+@mixin font-s-bold
+  font-size: 12px
+  letter-spacing: normal
+  @include font-defaults
+  font-weight: 500
+
+@mixin font-m
+  font-size: 14px
+  letter-spacing: 0.2px
+  @include font-defaults
+
+@mixin font-l
+  font-size: 16px
+  @include font-defaults
+
+@mixin font-xl
+  font-size: 20px
+  @include font-defaults
+
+@mixin font-xxl
+  font-size: 32px
+  color: oc.$gray-4
+  @include font-defaults
+
+//globals
